@@ -1,0 +1,96 @@
+- sensor:
+    - name: "Regen - Jetzt"
+      unique_id: "rain_next_0m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[0]['value'] if e is not none and e|length > 0 and e[0]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
+
+    - name: "Regen - 5m"
+      unique_id: "rain_next_5m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[1]['value'] if e is not none and e|length > 1 and e[1]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
+
+    - name: "Regen - 10m"
+      unique_id: "rain_next_10m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[2]['value'] if e is not none and e|length > 2 and e[2]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
+
+    - name: "Regen - 15m"
+      unique_id: "rain_next_15m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[3]['value'] if e is not none and e|length > 3 and e[3]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
+
+    - name: "Regen - 20m"
+      unique_id: "rain_next_20m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[4]['value'] if e is not none and e|length > 4 and e[4]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
+
+    - name: "Regen - 25m"
+      unique_id: "rain_next_25m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[5]['value'] if e is not none and e|length > 5 and e[5]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
+
+    - name: "Regen - 30m"
+      unique_id: "rain_next_30m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[6]['value'] if e is not none and e|length > 6 and e[6]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
+
+    - name: "Regen - 35m"
+      unique_id: "rain_next_35m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[7]['value'] if e is not none and e|length > 7 and e[7]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
+
+    - name: "Regen - 40m"
+      unique_id: "rain_next_40m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[8]['value'] if e is not none and e|length > 8 and e[8]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
+
+    - name: "Regen - 45m"
+      unique_id: "rain_next_45m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[9]['value'] if e is not none and e|length > 9 and e[9]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
+
+    - name: "Regen - 50m"
+      unique_id: "rain_next_50m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[10]['value'] if e is not none and e|length > 10 and e[10]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
+
+    - name: "Regen - 55m"
+      unique_id: "rain_next_55m"
+      state: >
+        {% set e = state_attr('sensor.rain_radar','entries') %}
+        {{ e[11]['value'] if e is not none and e|length > 11 and e[11]['value'] is not none else 0 }}
+      unit_of_measurement: "mm/h"
+      icon: mdi:weather-rainy
