@@ -1,0 +1,66 @@
+type: custom:layout-card
+layout_type: custom:horizontal-layout
+cards:
+  - type: vertical-stack
+    cards:
+      - type: custom:mini-graph-card
+        name: Regen
+        icon: mdi:weather-rainy
+        entities:
+          - entity: sensor.template_rain_next_0m
+          - entity: sensor.template_rain_next_5m
+          - entity: sensor.template_rain_next_10m
+          - entity: sensor.template_rain_next_15m
+          - entity: sensor.template_rain_next_20m
+          - entity: sensor.template_rain_next_25m
+          - entity: sensor.template_rain_next_30m
+          - entity: sensor.template_rain_next_35m
+          - entity: sensor.template_rain_next_40m
+          - entity: sensor.template_rain_next_45m
+          - entity: sensor.template_rain_next_50m
+          - entity: sensor.template_rain_next_55m
+        show:
+          graph: bar
+          icon: true
+          name: true
+          state: true
+          legend: false
+        bar_width: 40
+        hours_to_show: 1
+        height: 50
+        lower_bound: 0
+        aggregate_func: last
+        smoothing: false
+        color_thresholds:
+          - value: 0
+            color: rgb(216 216 216)
+          - value: 0.09
+            color: rgb(51 255 255)
+          - value: 0.19
+            color: rgb(26 204 154)
+          - value: 0.39
+            color: rgb(1 153 52)
+          - value: 0.9
+            color: rgb(77 179 27)
+          - value: 1.9
+            color: rgb(153 204 1)
+          - value: 2.9
+            color: rgb(204 230 1)
+          - value: 4.9
+            color: rgb(255 255 1)
+          - value: 7.4
+            color: rgb(55 196 1)
+          - value: 9.9
+            color: rgb(255 137 1)
+          - value: 14.9
+            color: rgb(255 69 1)
+          - value: 29.9
+            color: rgb(254 0 0)
+          - value: 44.9
+            color: rgb(229 0 76)
+          - value: 74.9
+            color: rgb(204 0 152)
+          - value: 99
+            color: rgb(102 0 203)
+          - value: 149
+            color: rgb(0 0 254)
