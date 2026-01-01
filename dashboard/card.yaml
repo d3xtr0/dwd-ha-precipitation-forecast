@@ -33,34 +33,34 @@ cards:
         smoothing: false
         color_thresholds:
           - value: 0
-            color: rgb(216 216 216)
+            color: rgb(216, 216, 216)
           - value: 0.09
-            color: rgb(51 255 255)
+            color: rgb(51, 255, 255)
           - value: 0.19
-            color: rgb(26 204 154)
+            color: rgb(26, 204, 154)
           - value: 0.39
-            color: rgb(1 153 52)
+            color: rgb(1, 153, 52)
           - value: 0.9
-            color: rgb(77 179 27)
+            color: rgb(77, 179, 27)
           - value: 1.9
-            color: rgb(153 204 1)
+            color: rgb(153, 204, 1)
           - value: 2.9
-            color: rgb(204 230 1)
+            color: rgb(204, 230, 1)
           - value: 4.9
-            color: rgb(255 255 1)
+            color: rgb(255, 255, 1)
           - value: 7.4
-            color: rgb(55 196 1)
+            color: rgb(55, 196, 1)
           - value: 9.9
-            color: rgb(255 137 1)
+            color: rgb(255, 137, 1)
           - value: 14.9
-            color: rgb(255 69 1)
+            color: rgb(255, 69, 1)
           - value: 29.9
-            color: rgb(254 0 0)
+            color: rgb(254, 0, 0)
           - value: 44.9
-            color: rgb(229 0 76)
+            color: rgb(229, 0, 76)
           - value: 74.9
-            color: rgb(204 0 152)
+            color: rgb(204, 0, 152)
           - value: 99
-            color: rgb(102 0 203)
+            color: rgb(102, 0, 203)
           - value: 149
-            color: rgb(0 0 254)
+            color: rgb(0, 0, 254)
