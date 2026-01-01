@@ -1,0 +1,10 @@
+- platform: rest
+  name: rain_radar
+  resource: "https://example.de/dwd/rain_radar.php?lat=52.520008&lng=13.404954"
+  method: GET
+  scan_interval: 300 # 5 minutes
+  headers:
+    User-Agent: "home-assistant"
+  value_template: "{{ value_json.generated }}"
+  json_attributes:
+    - entries
